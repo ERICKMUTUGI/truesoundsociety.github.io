@@ -20,8 +20,9 @@ a{text-decoration:none;color:inherit}
 
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:700}
-.brand span{font-size:1.05rem}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;min-width:max-content}
+.brand img{display:block;width:78px;height:58px;object-fit:contain;object-position:center;border-radius:8px;background:#fff;padding:3px;box-shadow:0 3px 12px rgba(18,52,74,.18);border:1px solid #dce7ec}
+.brand span{font-size:1.05rem;white-space:nowrap}
 .nav{display:flex;align-items:center;gap:26px;font-size:.92rem;font-weight:600}
 .nav a:hover{color:var(--green)}
 .menu-toggle{display:none;border:0;background:none;font-size:1.8rem}
@@ -101,7 +102,9 @@ footer{background:#102b40;color:#d6e5ed;padding:30px 0}
   .section{padding:75px 0}
 }
 @media(max-width:560px){
-  .brand span{display:inline;font-size:.95rem}
+  .brand{gap:8px;min-width:0}
+  .brand img{width:64px;height:48px}
+  .brand span{display:inline;font-size:.88rem;white-space:normal;line-height:1.2}
   .cards{grid-template-columns:1fr}
   h1{font-size:3rem}
   .hero-text{font-size:1rem}
