@@ -21,7 +21,6 @@ a{text-decoration:none;color:inherit}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:700}
-.brand img{width:50px;height:50px;object-fit:cover;border-radius:50%;background:#fff}
 .brand span{font-size:1.05rem}
 .nav{display:flex;align-items:center;gap:26px;font-size:.92rem;font-weight:600}
 .nav a:hover{color:var(--green)}
@@ -31,8 +30,8 @@ a{text-decoration:none;color:inherit}
 radial-gradient(circle at 75% 45%,rgba(22,138,50,.25),transparent 32%),
 linear-gradient(125deg,#032d10,#07551d 52%,#0a6e27)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.18),transparent 70%)}
-.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}
-.hero-copy{color:#fff;max-width:700px}
+.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr;align-items:center;gap:30px}
+.hero-copy{color:#fff;max-width:850px}
 .eyebrow,.section-tag{font-size:.78rem;letter-spacing:.18em;font-weight:700}
 .eyebrow{color:#a9e8df;margin-bottom:20px}
 h1{font-family:"Playfair Display",serif;font-size:clamp(3.1rem,7vw,6.4rem);line-height:1.02;margin-bottom:28px}
@@ -43,8 +42,6 @@ h1 span{color:#bceee7}
 .btn-primary{background:#fff;color:var(--green-deep)}
 .btn-outline{border:1px solid rgba(255,255,255,.7);color:#fff}
 .btn:hover{transform:translateY(-2px)}
-.hero-logo{display:flex;justify-content:center}
-.hero-logo img{width:min(100%,500px);aspect-ratio:1;object-fit:cover;border-radius:30px;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.3)}
 
 .section{padding:105px 0}
 .section-light{background:var(--green-soft)}
@@ -99,14 +96,12 @@ footer{background:#102b40;color:#d6e5ed;padding:30px 0}
   .nav.open{display:flex}
   .hero{min-height:auto;padding:90px 0}
   .hero-content,.two-col,.vision-grid,.contact-grid{grid-template-columns:1fr}
-  .hero-logo{order:-1}
-  .hero-logo img{max-width:330px}
   .cards{grid-template-columns:1fr 1fr}
   .involve-grid{grid-template-columns:1fr}
   .section{padding:75px 0}
 }
 @media(max-width:560px){
-  .brand span{display:none}
+  .brand span{display:inline;font-size:.95rem}
   .cards{grid-template-columns:1fr}
   h1{font-size:3rem}
   .hero-text{font-size:1rem}
